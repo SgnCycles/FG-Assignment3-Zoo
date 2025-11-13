@@ -35,6 +35,20 @@ body {
 }
 
 .footer {
-  padding: 24px;
   background-color: #43BF67;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px;
+}
+
+.footer_copyright {
+  font-size: 24px;
+  padding-top: 10px;
+}
+
+.footer_wrapper {
+  display: flex;
+  gap: 16px;
+  justify-content: end;
 }
