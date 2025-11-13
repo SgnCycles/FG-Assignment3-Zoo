@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 24px;
+  background-color: #43BF67;
+}
+
+.container {
+  flex-grow: 1;
+  display: flex; 
+  flex-wrap: wrap;
+}
+
+.sidebar {
+  flex: 20%;
+  background-color: #f36a64;
+}
+
+.main {
+  flex: 80%;
+  background-color: #122630;
+}
+
+.footer {
+  padding: 24px;
+  background-color: #43BF67;
+}
