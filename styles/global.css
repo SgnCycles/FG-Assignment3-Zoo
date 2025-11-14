@@ -68,6 +68,26 @@ body {
 }
 
 .footer {
+<<<<<<< HEAD
   padding: 24px;
   background-color: #43bf67;
 }
+=======
+  background-color: #43BF67;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px;
+}
+
+.footer-copyright {
+  font-size: 24px;
+  padding-top: 10px;
+}
+
+.footer-wrapper {
+  display: flex;
+  gap: 16px;
+  justify-content: end;
+}
+>>>>>>> d1a0293f5b3106556e97a99c25a285814a359894
