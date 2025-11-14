@@ -37,6 +37,7 @@ body {
 .footer {
   background-color: #43BF67;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 16px;
   padding: 24px;
@@ -49,6 +50,11 @@ body {
 
 .footer-wrapper {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
   justify-content: end;
+}
+
+.footer img {
+  width: 40px;
 }
