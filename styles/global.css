@@ -42,12 +42,12 @@ body {
   padding: 24px;
 }
 
-.footer_copyright {
+.footer-copyright {
   font-size: 24px;
   padding-top: 10px;
 }
 
-.footer_wrapper {
+.footer-wrapper {
   display: flex;
   gap: 16px;
   justify-content: end;
