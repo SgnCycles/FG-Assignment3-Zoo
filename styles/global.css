@@ -65,14 +65,61 @@ body {
 .main {
   flex: 80%;
   background-color: #122630;
+  position: relative;
+}
+
+.main-content {
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  color: rgb(213, 210, 210);
+  position: absolute;
+  z-index: 1000;
+}
+
+.main-title, .main-subtitle {
+  padding-left: 8vw;
+  letter-spacing: 4px;
+}
+
+.main-title {
+  font-size: 4rem;
+}
+
+.main-subtitle {
+  color: #557ca3;
+  font-weight: bolder;
+}
+
+.hero-image {
+  background-image: url("../images/australia.jpg");
+  background-size: cover;
+  position: absolute;
+  z-index: 500;
+  height: 70vh;
+  width: 50vw;
+  right: 0;
+  border-radius: 0% 100% 0% 100% / 0% 0% 100% 100%;
+  opacity: 0.9;
+  aspect-ratio: 1 / 1;
+}
+
+.hero-grey-blob {
+  background-color: #557ca3;
+  position: absolute;
+  z-index: 400;
+  height: 60vh;
+  width: 40vw;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  opacity: 0.1;
+  top: 10vh;
+  left: 20vw;
+  aspect-ratio: 1 / 3;
 }
 
 .footer {
-<<<<<<< HEAD
-  padding: 24px;
-  background-color: #43bf67;
-}
-=======
   background-color: #43BF67;
   display: flex;
   justify-content: space-between;
@@ -90,4 +137,3 @@ body {
   gap: 16px;
   justify-content: end;
 }
->>>>>>> d1a0293f5b3106556e97a99c25a285814a359894
