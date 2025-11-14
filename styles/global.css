@@ -36,6 +36,7 @@ body {
 }
 
 .main-content {
+  font-family: "Roboto";
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -47,7 +48,7 @@ body {
 
 .main-title, .main-subtitle {
   padding-left: 8vw;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
 }
 
 .main-title {
