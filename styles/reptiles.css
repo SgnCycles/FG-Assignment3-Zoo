@@ -5,20 +5,29 @@
   padding: 16px;
 }
 
-.title {
+.reptiles-title {
   background-color: #f36a64;
   margin: 48px;
   padding: 24px;
   text-align: center;
 }
 
+.reptiles-image {
+
+}
+
 .general-info {
-  background-image: url(../images/reptiles.jpg);
-  background-position: center;
   font-size: 2rem;
-  height: 80%;
   margin: 48px;
   padding: 48px;
+}
+
+.content {
+  background-color:#f36a64;
+  display: none;
+  margin: 16px;
+  padding: 24px;
+
 }
 
 .active {
