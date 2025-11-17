@@ -4,14 +4,21 @@
   border-radius: 8px;
   margin: 24px;
   padding: 16px;
+  text-align: center;
+}
+
+.main {
+  align-items: center;
+  display: flex;
+  flex-direction: column; 
 }
 
 .reptiles-title {
   background-color: #f36a64;
   border-radius: 8px;
   margin: 48px;
-  padding: 24px;
-  text-align: center;
+  padding: 24px 120px 24px 120px;
+
 }
 
 .reptiles-image {
