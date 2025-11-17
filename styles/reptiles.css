@@ -1,0 +1,26 @@
+.tab {
+  color: white;
+  background-color: #122630;
+  margin: 24px;
+  padding: 16px;
+}
+
+.title {
+  background-color: #f36a64;
+  margin: 48px;
+  padding: 24px;
+  text-align: center;
+}
+
+.general-info {
+  background-image: url(../images/reptiles.jpg);
+  background-position: center;
+  font-size: 2rem;
+  height: 80%;
+  margin: 48px;
+  padding: 48px;
+}
+
+.active {
+  background-color: red;
+}
