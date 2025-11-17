@@ -1,19 +1,21 @@
 .tab {
   color: white;
   background-color: #122630;
+  border-radius: 8px;
   margin: 24px;
   padding: 16px;
 }
 
 .reptiles-title {
   background-color: #f36a64;
+  border-radius: 8px;
   margin: 48px;
   padding: 24px;
   text-align: center;
 }
 
 .reptiles-image {
-
+  justify-content: center;
 }
 
 .general-info {
@@ -32,4 +34,11 @@
 
 .active {
   background-color: red;
+}
+
+
+.main-content > div {
+  background-color: #f36a64;
+  padding: 24px;
+  margin: 24px;
 }
