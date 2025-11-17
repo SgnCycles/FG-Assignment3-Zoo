@@ -24,7 +24,7 @@ function Bird(
 let cassowary = new Bird(
   "Cassowary",
   "Cassowaries are large flightless birds with powerful legs that can run fast and swim well. They are shy and hard to spot in rainforests, not usually aggressive but can be dangerous if provoked",
-  "Its not hard to imagine that cassowaries are descended from dinosaur ancestors. The largest cassowaries can stand as high as six feet and weigh up to 160 pounds.   These large birds cannot fly, but their extremely powerful legs propel them at great speeds. They are strong swimmers and can move quickly on both land and water. Cassowaries are shy and they are usually hard to spot, at least in their natural rain forest habitats. They are not overly aggressive, and attacks are rare. But they can do a lot of damage if they are provoked or angered. Cassowary attacks have occasionally been deadly, including a recent one which occurred in 2019, at a private collection of caged birds in Florida",
+  "Its not hard to imagine that cassowaries are descended from dinosaur ancestors. The largest cassowaries can stand as high as six feet and weigh up to 160 pounds. These large birds cannot fly, but their extremely powerful legs propel them at great speeds. They are strong swimmers and can move quickly on both land and water. Cassowaries are shy and they are usually hard to spot, at least in their natural rain forest habitats. They are not overly aggressive, and attacks are rare. But they can do a lot of damage if they are provoked or angered. Cassowary attacks have occasionally been deadly, including a recent one which occurred in 2019, at a private collection of caged birds in Florida",
   "20 years",
   "Birds",
   "Plants matter like fruit, insects and small animals like mice and lizards",
@@ -77,7 +77,7 @@ function showShortSummary(bird) {
   const box = document.createElement("div");
   box.classList.add("short-summary");
 
-  const title = document.createElement("h2");
+  const title = document.createElement("h1");
   title.textContent = bird.name;
 
   const img = document.createElement("img");
@@ -88,18 +88,63 @@ function showShortSummary(bird) {
   const desc = document.createElement("p");
   desc.textContent = bird.shortDescription;
 
+  const readMore = document.createElement("button");
+  readMore.textContent = "Read More";
+  readMore.addEventListener("click", () => showFullsummary(bird));
+
+  box.appendChild(title);
+  box.appendChild(img);
+  box.appendChild(desc);
+  box.appendChild(readMore);
+
+  main.innerHTML = "";
+  main.appendChild(box);
+}
+
+function showFullsummary(bird) {
+  main.innerHTML = "";
+
+  const box = document.createElement("div");
+  box.classList.add("full-summary");
+
+  const title = document.createElement("h1");
+  title.textContent = bird.name;
+
+  const img = document.createElement("img");
+  img.src = bird.image;
+  img.alt = bird.name;
+  img.width = 200;
+
+  const desc = document.createElement("p");
+  desc.textContent = bird.shortDescription + "" + bird.fullDescription;
+
   const food = document.createElement("p");
   food.textContent = "Food: " + bird.food;
 
   const group = document.createElement("p");
   group.textContent = "Group: " + bird.group;
 
+  const lifespan = document.createElement("p");
+  lifespan.textContent = "Lifespan: " + bird.lifespan;
+
+  const length = document.createElement("p");
+  length.textContent = "Length: " + bird.length;
+
+  const weight = document.createElement("p");
+  weight.textContent = "Weight: " + bird.weight;
+
+  const found = document.createElement("p");
+  found.textContent = "Found: " + bird.found;
+
   box.appendChild(title);
   box.appendChild(img);
   box.appendChild(desc);
+  box.appendChild(lifespan);
+  box.appendChild(length);
+  box.appendChild(found);
+  box.appendChild(weight);
   box.appendChild(food);
   box.appendChild(group);
 
-  main.innerHTML = "";
   main.appendChild(box);
 }
