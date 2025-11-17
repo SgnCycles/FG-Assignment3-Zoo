@@ -1,0 +1,35 @@
+.about-us-main {
+  font-family: "Quicksand", sans-serif;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 80%;
+  background-color: #122630;
+  justify-content: space-around;
+  padding: 24px 0;
+  color: antiquewhite;
+}
+
+.about-us-content {
+  padding-top: 30px;
+}
+
+.about-us-header-title {
+  font-size: 1.8rem;
+}
+
+.about-us-image img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.about-us-content p{
+  padding: 10px 5vw;
+}
+
+.about-us-header-title, .about-us-content {
+  letter-spacing: 2px;
+}
