@@ -65,17 +65,14 @@ font-size: 2.2rem;
   color: #122630;
   font-family: "Quicksand", sans-serif;
   font-size: 1.4rem;
-  font-weight: bold;
-
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
-
   cursor: pointer;
-  transition: transform 0.25s, background-color 0.25s;
+  transition: transform 0.3s, background-color 0.25s;
 }
 
 .sidebar-item:hover {
-  transform: scale(1.05);
+  transform: scale(1.07);
   background-color: rgba(255, 255, 255, 0.4);
 }
 
