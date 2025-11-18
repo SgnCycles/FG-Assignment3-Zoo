@@ -27,6 +27,12 @@ function Bird(
   birds.push(this);
 }
 
+const toggleReadMore = () =>{
+  const isVisible = descriptionLocation.classList.toggle("description-bird-visible")
+  smallLocation.classList.toggle("small-description-bird-visible")
+  readMore.textContent = isVisible ? "Read less" : "Read more";
+}
+
 new Bird(
   "Cassowary",
   "Its not hard to imagine that cassowaries are descended from dinosaur ancestors. The largest cassowaries can stand as high as six feet and weigh up to 160 pounds. These large birds cannot fly, but their extremely powerful legs propel them at great speeds.",
@@ -152,16 +158,5 @@ birds.forEach((bird) => {
   });
 });
 
-const readMore = document.querySelector(".read-more-bird");
+readMore.addEventListener("click", toggleReadMore);
 
-readMore.addEventListener("click", () => {
-  if (descriptionLocation.classList.contains("description-bird-visible")) {
-    descriptionLocation.classList.remove("description-bird-visible");
-    smallLocation.classList.remove("small-description-bird-visible");
-    readMore.textContent = "Read more";
-  } else {
-    descriptionLocation.classList.add("description-bird-visible");
-    smallLocation.classList.add("small-description-bird-visible");
-    readMore.textContent = "Read less";
-  }
-});
