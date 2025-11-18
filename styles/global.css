@@ -146,7 +146,7 @@ body {
   "animal-image animal-image animal-diet animal-class"
   "animal-description animal-description animal-description animal-description"
   ;
-  color: antiquewhite;
+  color: rgb(213, 210, 210);
   height: 100%;
   width: 80%;
 }
@@ -194,7 +194,7 @@ body {
   margin-bottom: 35px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
   text-decoration: none;
-  color: antiquewhite;
+  color: rgb(213, 210, 210);
 }
 
 .main-animal-short-description {
