@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jurassic Parse</title>
-    <link rel="stylesheet" href="./styles/typogrophy.css" />
+    <link rel="stylesheet" href="./styles/typography.css" />
     <link rel="stylesheet" href="./styles/global.css" />
     <script src="./javascript/homepage.js"></script>
   </head>
@@ -25,51 +25,79 @@
         <ul class="nav-list">
           <li><a class="nav-option" href="">Home</a></li>
           <li><a class="nav-option" href="">Birds</a></li>
-          <li><a class="nav-option" href="">Mammals</a></li>
+          <li><a class="nav-option" href="mammals.html">Mammals</a></li>
           <li><a class="nav-option" href="">Reptiles</a></li>
-          <li><a class="nav-option" href="">About</a></li>
+          <li><a class="nav-option" href="./about_us.html">About</a></li>
         </ul>
       </nav>
     </header>
     <div class="container">
       <div class="sidebar"></div>
-      <div class="main"></div>
+      <div class="main">
+        <div class="main-content">
+          <h1 class="main-title">Welcome to<br>Jurassic Parse</h1>
+          <p class="main-subtitle">Discover the Wonders of Australia</p>
+        </div>
+        <div class="hero-image"></div>
+        <div class="hero-grey-blob"></div>
+      </div>
+          <!-- Animal short description -->
+        <div class="main-animal">
+          <div class="main-animal-grid">
+            <div class="main-animal-image">
+              <img src="./images/echidna.jpg" width="300px" height="auto" alt="Echidna">
+            </div>
+            <div class="main-animal-content">
+              <h1 class="main-animal-title">Echidna</h1>
+            </div>
+            <div class="main-animal-diet">
+              <h2>Diet</h2>
+              <p>insects such as ants and termites, beetle larvae and worms</p></div>
+            <div class="main-animal-class">
+              <h2>Class</h2>
+              <a href="./mammals.html">Mammals</a>
+            </div>
+            <div class="main-animal-short-description">
+              <p>Echidnas, also called spiny anteaters, are walking contradictions. They are mammals, but they lay eggs.</p>
+            </div>
+          </div>
+        </div>
+        <!-- animal short description end -->
     </div>
-  <footer class="footer">
-    <div class="footer-copyright">&copy; Jurassic Parse</div>
-    <div class="footer-wrapper">
-      <div>
-        <a href="https://facebook.com">
-          <img src="./logos/facebook_logo.png" alt="Facebook logo" width="50px" height="auto">
-        </a>
+    <footer class="footer">
+      <div class="footer-copyright">&copy; Jurassic Parse</div>
+      <div class="footer-wrapper">
+        <div>
+          <a href="https://facebook.com">
+            <img src="./logos/facebook_logo.png" alt="Facebook logo" width="50px" height="auto">
+          </a>
+        </div>
+        <div>
+          <a href="https://linkedin.com">
+            <img src="./logos/linkedin_logo.png" alt="Linkedin logo" width="50px" height="auto">
+          </a>
+        </div>
+        <div>
+          <a href="https://github.com">
+            <img src="./logos/github_logo.png" alt="Git logo" width="50px" height="auto">
+          </a>
+        </div>
+        <div>
+          <a href="https://www.tiktok.com">
+            <img src="./logos/tiktok_logo.png" alt="Tiktok logo" width="50px" height="auto">
+          </a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com">
+            <img src="./logos/instagram_logo.png" alt="Instagram logo" width="50px" height="auto">
+          </a>
+        </div>
+        <div>
+          <a href="https://x.com">
+            <img src="./logos/x_logo.png" alt="X logo" width="50px" height="auto">
+          </a>
+        </div>
       </div>
-      <div>
-        <a href="https://linkedin.com">
-          <img src="./logos/linkedin_logo.png" alt="Linkedin logo" width="50px" height="auto">
-        </a>
-      </div>
-      <div>
-        <a href="https://github.com">
-          <img src="./logos/github_logo.png" alt="Git logo" width="50px" height="auto">
-        </a>
-      </div>
-      <div>
-        <a href="https://www.tiktok.com">
-          <img src="./logos/tiktok_logo.png" alt="Tiktok logo" width="50px" height="auto">
-        </a>
-      </div>
-      <div>
-        <a href="https://www.instagram.com">
-          <img src="./logos/instagram_logo.png" alt="Instagram logo" width="50px" height="auto">
-        </a>
-      </div>
-      <div>
-        <a href="https://x.com">
-          <img src="./logos/x_logo.png" alt="X logo" width="50px" height="auto">
-        </a>
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
