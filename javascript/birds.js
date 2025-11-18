@@ -19,7 +19,7 @@ function Bird(
     (this.length = length),
     (this.weight = weight),
     (this.found = found);
-  this.image = image;
+    (this.image = image);
 }
 let cassowary = new Bird(
   "Cassowary",
@@ -83,7 +83,6 @@ function showShortSummary(bird) {
   const img = document.createElement("img");
   img.src = bird.image;
   img.alt = bird.name;
-  img.width = 200;
 
   const desc = document.createElement("p");
   desc.textContent = bird.shortDescription;
