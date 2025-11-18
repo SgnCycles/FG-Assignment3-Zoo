@@ -117,14 +117,14 @@ function showFullsummary(bird) {
   const desc = document.createElement("p");
   desc.textContent = bird.shortDescription + "" + bird.fullDescription;
 
-  const food = document.createElement("p");
-  food.textContent = "Food: " + bird.food;
+  const lifespan = document.createElement("p");
+  lifespan.textContent = "Lifespan: " + bird.lifespan;
 
   const group = document.createElement("p");
   group.textContent = "Group: " + bird.group;
 
-  const lifespan = document.createElement("p");
-  lifespan.textContent = "Lifespan: " + bird.lifespan;
+  const food = document.createElement("p");
+  food.textContent = "Food: " + bird.food;
 
   const length = document.createElement("p");
   length.textContent = "Length: " + bird.length;
@@ -139,11 +139,11 @@ function showFullsummary(bird) {
   box.appendChild(img);
   box.appendChild(desc);
   box.appendChild(lifespan);
-  box.appendChild(length);
-  box.appendChild(found);
-  box.appendChild(weight);
-  box.appendChild(food);
   box.appendChild(group);
+  box.appendChild(food);
+  box.appendChild(length);
+  box.appendChild(weight);
+  box.appendChild(found);
 
   main.appendChild(box);
 }
