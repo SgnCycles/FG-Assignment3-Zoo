@@ -1,0 +1,92 @@
+.main {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.short-summary,
+.full-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #1a3a47;
+  padding: 30px;
+  width: 100%;
+}
+
+.short-summary h1,
+.full-summary h1 {
+font-size: 2.2rem;
+}
+
+.short-summary img,
+.full-summary img {
+  width: 50%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.short-summary p,
+.full-summary p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.short-summary button,
+.full-summary button {
+  padding: 10px 20px;
+  background: #ff8a80;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.short-summary button:hover,
+.full-summary button:hover {
+  background: #ff6e63;
+}
+
+
+
+
+/* SIDEBAR CONTAINER */
+#bird-sidebar {
+  padding: 20px;
+  background-color: #f36a64; /* your sidebar color */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* EACH ITEM (bird name) */
+.sidebar-item {
+  padding: 12px 18px;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #122630;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.4rem;
+  font-weight: bold;
+
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+
+  cursor: pointer;
+  transition: transform 0.25s, background-color 0.25s;
+}
+
+/* HOVER EFFECT */
+.sidebar-item:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* ACTIVE BIRD (when clicked, stays highlighted?) — OPTIONAL */
+.sidebar-item.active {
+  background-color: #ffe4e1;
+  transform: scale(1.08);
+}
