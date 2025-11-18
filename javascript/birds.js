@@ -28,8 +28,8 @@ function Bird(
 }
 
 const toggleReadMore = () =>{
-  const isVisible = descriptionLocation.classList.toggle("description-bird-visible")
-  smallLocation.classList.toggle("small-description-bird-visible")
+  const isVisible = fullDescription.classList.toggle("description-bird-visible")
+  shortDescription.classList.toggle("short-description-bird-visible")
   readMore.textContent = isVisible ? "Read less" : "Read more";
 }
 
@@ -77,8 +77,9 @@ const wrapper = document.querySelector(".wrapper-bird");
 const animalsLocation = document.querySelector(".sidebar-animals");
 const imgLocation = document.querySelector(".image-bird");
 const nameLocation = document.querySelector(".name-bird");
-const smallLocation = document.querySelector(".small-description-bird");
-const descriptionLocation = document.querySelector(".description-bird");
+const shortDescription = document.querySelector(".short-description-bird");
+const fullDescription = document.querySelector(".description-bird");
+const readMore = document.querySelector(".read-more-bird")
 const introTitle = document.querySelector(".intro-title")
 const introText = document.querySelector(".intro-text")
 
@@ -115,12 +116,12 @@ birds.forEach((bird) => {
       name.textContent = bird.name;
       nameLocation.replaceChildren(name);
 
-      const small = document.createElement("p");
-      small.textContent = bird.shortDescription;
-      smallLocation.replaceChildren(small);
+      const shortPara = document.createElement("p");
+      shortPara.textContent = bird.shortDescription;
+      shortDescription.replaceChildren(shortPara);
 
-      const desc = document.createElement("p");
-      desc.textContent = bird.fullDescription;
+      const fullPara = document.createElement("p");
+      fullPara.textContent = bird.fullDescription;
 
       const life = document.createElement("p");
       life.textContent = `Lifespan: ${bird.lifespan}`;
@@ -140,8 +141,8 @@ birds.forEach((bird) => {
       const group = document.createElement("p");
       group.textContent = `Group: ${bird.group}`;
 
-      descriptionLocation.replaceChildren(
-        desc,
+      fullDescription.replaceChildren(
+        fullPara,
         life,
         length,
         weight,
@@ -150,13 +151,12 @@ birds.forEach((bird) => {
         food
       );
 
-      descriptionLocation.classList.remove("description-bird-visible");
-      smallLocation.classList.remove("small-description-bird-visible");
+      fullDescription.classList.remove("description-bird-visible");
+      shortDescription.classList.remove("short-description-bird-visible");
       readMore.textContent = "Read more";
       currentBird = bird.name;
     }
   });
 });
-
 readMore.addEventListener("click", toggleReadMore);
 
