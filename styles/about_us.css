@@ -1,13 +1,20 @@
 .about-us-main {
+  flex: 80%;
+}
+
+.about-us-wrapper, .about-card-container  {
   font-family: "Quicksand", sans-serif;
   align-items: center;
   display: flex;
   flex-direction: column;
-  flex: 80%;
   background-color: #122630;
   justify-content: space-around;
   padding: 24px 0;
-  color: antiquewhite;
+  color: rgb(213, 210, 210);
+}
+
+.about-us-wrapper {
+  display: none;
 }
 
 .about-us-content {
@@ -26,10 +33,93 @@
   width: 100%;
 }
 
-.about-us-content p{
+.about-us-content p {
   padding: 10px 5vw;
 }
 
 .about-us-header-title, .about-us-content {
   letter-spacing: 2px;
+}
+
+.about-card-container, .about-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.about-card-container {
+  padding: 50px;
+  height: 100%;
+}
+
+.info-card {
+  display: grid;
+  gap: 10px;
+  grid-template: repeat(2, auto) / repeat(4, auto);
+  grid-template-areas:
+  "employee-image employee-image employee-name employee-subtitle"
+  "animal-description animal-description animal-description animal-description"
+  ;
+  color: rgb(213, 210, 210);
+  height: 100%;
+  width: 80%;
+}
+
+.info-card-image {
+  grid-area: employee-image;
+  display: block;
+}
+
+.info-card-image img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.info-card-name {
+  grid-area: employee-name;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.info-card-subtitle {
+  grid-area: employee-subtitle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.info-card-name, .info-card-subtitle {
+  letter-spacing: 2px;
+}
+
+.info-card-description {
+  grid-area: animal-description;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.info-card-description p {
+  padding: 20px;
+  font-size: 1.3rem;
+}
+
+.info-card-name, .info-card-subtitle, .info-card-description {
+  background-color: #557ca3;
+  border-radius: 15px;
+}
+
+.main-animal-class, .main-animal-diet, .main-animal-short-description {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
 }
