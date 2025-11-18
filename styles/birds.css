@@ -1,65 +1,88 @@
 .main {
-  padding: 30px;
   display: flex;
-  justify-content: center;
-  text-align: center;
-  color: white;
 }
 
-.short-summary,
-.full-summary {
+.wrapper-intro-bird {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background: #1a3a47;
-  padding: 30px;
-  width: 100%;
+  flex-grow: 1;
+  margin: 32px;
 }
 
-.short-summary h1,
-.full-summary h1 {
-font-size: 2.2rem;
-}
-
-.short-summary img,
-.full-summary img {
-  width: 50%;
-  height: auto;
+.intro-title {
+  padding: 10px 18px;
+  background-color: rgba(85, 124, 163, 0.2);
+  font-family: "Quicksand", sans-serif;
   border-radius: 12px;
-  margin-bottom: 25px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+  color: #0c1c23;
+  margin: 16px;
 }
 
-.short-summary p,
-.full-summary p {
-  font-size: 1rem;
-  margin-bottom: 10px;
+.intro-image {
+  padding: 10px 18px;
+  background-image: url(../images/birds.jpg);
+  flex-grow: 1;
+  border-radius: 12px;
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
 }
 
-.short-summary button,
-.full-summary button {
-  padding: 10px 20px;
-  background: #ff8a80;
-  border: none;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  margin-top: 15px;
+.intro-text {
+  background-color: #555ba392;
+  padding: 16px;
+  border-radius: 16px;
+  color: white;
+  margin-top: 30%;
 }
 
-.short-summary button:hover,
-.full-summary button:hover {
-  background: #ff6e63;
+.image-bird img {
+  height: auto;
+  width: 30%;  
+  border-radius: 16px;
 }
 
-#bird-sidebar {
-  padding: 20px;
-  background-color: #f36a64;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.wrapper-intro-bird-visible {
+  display: none;
 }
 
-.sidebar-item {
+.wrapper-bird {
+  display: none;
+  background-color: #555ca3;
+  padding: 16px;
+  border-radius: 32px;
+  transform: scale(0.8);
+  transition: transform 0.3s ease-in-out;
+  transform-origin: center;
+  margin: 16px;
+}
+
+.wrapper-bird-visible {
+  display: block;
+  width: 80%;   
+  transform: scale(1);
+  margin: 16px auto;
+}
+
+.description-bird {
+  display: none;
+}
+
+.description-bird-visible {
+  display: block;
+}
+
+.small-description-bird {
+  display: block;
+}
+
+.small-description-bird-visible {
+  display: none;
+}
+
+.read-more-bird {
   padding: 12px 18px;
   background-color: rgba(255, 255, 255, 0.25);
   color: #122630;
@@ -69,10 +92,28 @@ font-size: 2.2rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   transition: transform 0.3s, background-color 0.25s;
+  margin: 16px;
 }
 
-.sidebar-item:hover {
+.read-more-bird:hover {
   transform: scale(1.07);
   background-color: rgba(255, 255, 255, 0.4);
 }
 
+.sidebar-animals-button {
+  padding: 12px 18px;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #122630;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.4rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.25s;
+  margin: 16px;
+}
+
+.sidebar-animals-button:hover {
+  transform: scale(1.07);
+  background-color: rgba(255, 255, 255, 0.4);
+}
