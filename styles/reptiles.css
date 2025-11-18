@@ -7,10 +7,12 @@
   text-align: center;
 }
 
-.main {
+.reptiles-main {
   align-items: center;
+  background-color: #122630;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
+  flex: 80%;
 }
 
 .reptiles-title {
@@ -26,7 +28,8 @@
 }
 
 .general-info {
-  font-size: 2rem;
+  background-color: #f36a64;
+  font-size: 1.2rem;
   margin: 48px;
   padding: 48px;
 }
@@ -43,9 +46,9 @@
   background-color: red;
 }
 
-
 .main-content > div {
   background-color: #f36a64;
+  display: none;
   padding: 24px;
-  margin: 24px;
+  margin: 12px;
 }
