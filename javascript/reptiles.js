@@ -30,7 +30,6 @@ let mainContent = document.querySelector(".wrapper-reptiles")
 
 const introVisibility = document.querySelector(".reptiles-intro")
 
-// visa info om djuren i click
 
 
 const showReptileInfo = reptile => {
@@ -86,19 +85,28 @@ const showReptileInfo = reptile => {
 
   const readMoreButton = document.createElement("button")
   readMoreButton.textContent = "Read More"
-  readMoreButton.classList.add("read-more") 
+  readMoreButton.classList.add("read-more")
 
   readMoreButton.addEventListener("click", () => {
     fullInfo.classList.toggle("visible")
+    if (fullInfo.classList.contains("visible")) {
+      readMoreButton.textContent = "Read Less"
+    } else {
+      readMoreButton.textContent = "Read More"
+    }
   })
 
+
+  //hidden-info visible
+
+  // om innehållet innehåller detta så byt namnet till read less
 
 
   reptileInfo.appendChild(name)
   reptileInfo.appendChild(image)
   reptileInfo.appendChild(shortDescription)
-  reptileInfo.appendChild(readMoreButton)
   reptileInfo.appendChild(fullInfo)
+  reptileInfo.appendChild(readMoreButton)
 
 
   mainContent.appendChild(reptileInfo)
@@ -108,6 +116,9 @@ const showReptileInfo = reptile => {
 }
 
 
+//fixa sidebar
+//fixa css 
+//fixa html
 
 // Click in sidebar
 
@@ -129,7 +140,3 @@ reptileArray.forEach(reptile => {
 
   sidebar.appendChild(sidebarReptile)
 })
-
-
-
-//read more button
