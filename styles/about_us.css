@@ -1,28 +1,55 @@
-.about-us-main {
+.sidebar-employee {
+  padding-left: 0;
+  text-align: center;
+  }
+
+.sidebar-employee-button {
+  padding: 12px 18px;
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #122630;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.4rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.25s;
+  margin: 16px;
+  list-style-type: none;
+}
+
+.sidebar-employee-button:hover {
+  transform: scale(1.07);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.container {
+  background-color: #122630;
+}
+.about-us-main.active, .about-card-container.active {
   flex: 80%;
 }
 
-.about-us-wrapper, .about-card-container  {
+.about-us-main.active {
+  display: flex;
+}
+
+.about-us-main {
+  display: none;
+}
+
+.about-us-wrapper, .about-card-container {
   font-family: "Quicksand", sans-serif;
   align-items: center;
   display: flex;
   flex-direction: column;
-  background-color: #122630;
   justify-content: space-around;
   padding: 24px 0;
   color: rgb(213, 210, 210);
 }
 
-.about-us-wrapper {
-  display: none;
-}
-
-.about-us-content {
-  padding-top: 30px;
-}
-
-.about-us-header-title {
+.about-us-header-title{
   font-size: 1.8rem;
+  text-align: center;
 }
 
 .about-us-image img {
@@ -33,93 +60,59 @@
   width: 100%;
 }
 
+.about-us-content {
+  padding-top: 30px;
+}
+
 .about-us-content p {
   padding: 10px 5vw;
 }
 
-.about-us-header-title, .about-us-content {
+.about-us-header-title p, .about-us-content p, .about-card-description p {
   letter-spacing: 2px;
+  line-height: 2rem;
+  font-size: 1.2rem;
 }
 
-.about-card-container, .about-card-wrapper {
+.about-card-container {
+  display: none;
+}
+
+.about-card-container.active {
+  text-align: center;
+  /* height: 100%; */
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.about-card-wrapper {
+  border-radius: 15px;
+  width: 80%;
+  padding: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 } 
 
-.about-card-container {
-  padding: 50px;
-  height: 100%;
+.about-card-image img {
+border-radius: 15px;
 }
 
-.info-card {
-  display: grid;
-  gap: 10px;
-  grid-template: repeat(2, auto) / repeat(4, auto);
-  grid-template-areas:
-  "employee-image employee-image employee-name employee-subtitle"
-  "animal-description animal-description animal-description animal-description"
-  ;
-  color: rgb(213, 210, 210);
-  height: 100%;
-  width: 80%;
+.about-card-name h2{
+  font-size: 3rem;
 }
 
-.info-card-image {
-  grid-area: employee-image;
-  display: block;
-}
-
-.info-card-image img {
-  display: block;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-  width: 100%;
-  border-radius: 15px;
-}
-
-.info-card-name {
-  grid-area: employee-name;
-  align-items: center;
-  display: flex;
-  justify-content: center;
+.about-card-subtitle h3{
   font-size: 2rem;
 }
+@media (min-width: 340px) and (max-width: 1024px) {
+  .about-us-header-title{
+    font-size: 1.5rem;
+  }
 
-.info-card-subtitle {
-  grid-area: employee-subtitle;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-}
-
-.info-card-name, .info-card-subtitle {
-  letter-spacing: 2px;
-}
-
-.info-card-description {
-  grid-area: animal-description;
-  padding-left: 15px;
-  padding-top: 15px;
-}
-
-.info-card-description p {
-  padding: 20px;
-  font-size: 1.3rem;
-}
-
-.info-card-name, .info-card-subtitle, .info-card-description {
-  background-color: #557ca3;
-  border-radius: 15px;
-}
-
-.main-animal-class, .main-animal-diet, .main-animal-short-description {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 1.5rem;
+  .about-card-container.active {
+    margin-bottom: 0;
+    padding: 0;
+  }
 }
