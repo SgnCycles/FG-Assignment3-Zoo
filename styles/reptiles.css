@@ -16,7 +16,6 @@
   margin: 32px
 }
 
-
 .wrapper-reptiles:empty {
   display: none;
 }
@@ -77,7 +76,6 @@
   background-position: bottom;
   background-size: cover;
 }
-
 
 .general-info {
   background-color: #555ba392;

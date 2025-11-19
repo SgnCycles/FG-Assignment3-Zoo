@@ -1,3 +1,6 @@
+let reptileArray = [frillNeckedLizard, hawksbillTurtle, perentie]
+let currentAnimal;
+
 function Reptile(name, lifespan, group, food, shortDescription, description, length, weight, found, image) {
   this.name = name;
   this.lifespan = lifespan;
@@ -20,23 +23,15 @@ const hawksbillTurtle = new Reptile("Hawksbill Turtle", "50years", "Reptile", "o
 const perentie = new Reptile("Perentie", "20 years", "Reptile", "Carmivore, they eat animals like kangaroos, rabbits, lizards and birds", "The perentie (Varanus giganteus) is the largest monitor lizard or goanna native to Australia.", "The perentie (Varanus giganteus) is the largest monitor lizard or goanna native to Australia. It is one of the largest living lizards on earth, after the Komodo dragon, Asian water monitor, crocodile monitor, and intersecting by size with Nile monitor. Found west of the Great Dividing Range in the arid areas of Australia, it is rarely seen, because of its shyness and the remoteness of much of its range from human habitation. The species is considered to be a least-concern species according to the International Union for Conservation of Nature. Its status in many Aboriginal cultures is evident in the totemic relationships, and part of the Ngiṉṯaka dreaming, as well as bush tucker. It was a favoured food item among desert Aboriginal tribes, and the fat was used for medicinal and ceremonial purposes.",
   "2.5m", "20kg", "Deserts", "./images/perentie.jpeg")
 
-
-let reptileArray = [frillNeckedLizard, hawksbillTurtle, perentie]
-
-let currentAnimal;
-
 let sidebar = document.querySelector(".sidebar")
 let mainContent = document.querySelector(".wrapper-reptiles")
 
 const introVisibility = document.querySelector(".reptiles-intro")
 
-
-
 const showReptileInfo = reptile => {
   mainContent.innerHTML = "";
 
   introVisibility.classList.add("hide-intro")
-
 
   let reptileInfo = document.createElement("div")
 
@@ -45,7 +40,7 @@ const showReptileInfo = reptile => {
 
   let image = document.createElement("img")
   image.src = reptile.image
-  image.classList.add("wrapper-image")     
+  image.classList.add("wrapper-image")
 
   let shortDescription = document.createElement("p")
   shortDescription.textContent = reptile.shortDescription
@@ -73,7 +68,6 @@ const showReptileInfo = reptile => {
 
   let found = document.createElement("p")
   found.textContent = `Found: ${reptile.found}`
-
 
   fullInfo.appendChild(description)
   fullInfo.appendChild(group)
@@ -104,11 +98,9 @@ const showReptileInfo = reptile => {
   reptileInfo.appendChild(fullInfo)
   reptileInfo.appendChild(readMoreButton)
 
-
   mainContent.appendChild(reptileInfo)
 
   currentAnimal = reptile;
-
 }
 
 reptileArray.forEach(reptile => {
