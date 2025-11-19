@@ -27,11 +27,11 @@ function Bird(
   birds.push(this);
 }
 
-const toggleReadMore = () => {
-  const isHidden = fullDescription.classList.toggle("hidden");
-  shortDescription.classList.toggle("hidden");
-  readMore.textContent = isHidden ? "Read less" : "Read more";
-};
+const toggleReadMore = () =>{
+  const fullIsHidden = fullDescription.classList.toggle("hidden")
+  shortDescription.classList.toggle("hidden")
+  readMore.textContent = fullIsHidden ? "Read more" : "Read less";
+}
 
 new Bird(
   "Cassowary",
@@ -79,13 +79,13 @@ const imgLocation = document.querySelector(".image-bird");
 const nameLocation = document.querySelector(".name-bird");
 const shortDescription = document.querySelector(".short-description-bird");
 const fullDescription = document.querySelector(".description-bird");
-const readMore = document.querySelector(".read-more-bird");
-const introTitle = document.querySelector(".intro-title");
-const introText = document.querySelector(".intro-text");
+const readMore = document.querySelector(".read-more-bird")
+const introTitle = document.querySelector(".intro-title")
+const introText = document.querySelector(".intro-text")
 
-introTitle.textContent = "Birds";
-introText.textContent =
-  "Birds are warm-blooded vertebrates with feathers, beaks, and highly efficient respiratory systems.";
+introTitle.textContent = "Birds"
+introText.textContent = "Birds are warm-blooded vertebrates with feathers, beaks, and highly efficient respiratory systems."
+
 
 birds.forEach((bird) => {
   const buttonWrapper = document.createElement("div");
@@ -97,9 +97,10 @@ birds.forEach((bird) => {
   buttonWrapper.appendChild(button);
 
   button.addEventListener("click", () => {
-    const isSameBird = bird.name === currentBird;
-    const isWrapperVisible = !wrapper.classList.contains("hidden");
-    if (isSameBird && isWrapperVisible) {
+const isSameBird = bird.name === currentBird
+const isWrapperVisible = !wrapper.classList.contains("hidden")
+    if (isSameBird && isWrapperVisible)
+     {
       wrapper.classList.add("hidden");
       introWrapper.classList.remove("hidden");
     } else {
@@ -158,3 +159,4 @@ birds.forEach((bird) => {
   });
 });
 readMore.addEventListener("click", toggleReadMore);
+
