@@ -1,3 +1,14 @@
+.container {
+  background-color: #122630;
+  flex-wrap: nowrap;
+}
+
+.wrapper-reptiles {
+  background-color: rgb(30, 81, 124);
+  padding: 24px;
+  margin: 24px;
+}
+
 .sidebar-item {
   background-color: rgba(255, 255, 255, 0.25);
   border-radius: 12px;
@@ -34,7 +45,7 @@
 }
 
 .reptiles-title {
-  background-color: #f36a64;
+  background-color: rgba(85, 124, 163, 0.2);
   border-radius: 8px;
   margin: 48px;
   padding: 24px 120px 24px 120px;
@@ -46,15 +57,16 @@
 }
 
 .general-info {
-  background-color: #f36a64;
+  background-color: #555ba392;
+  color: white;
+  font-family: "Quicksand", sans-serif;
   font-size: 1.2rem;
   margin: 48px;
   padding: 48px;
 }
 
-
-.wrapper-reptiles {
-
+.hide-intro {
+  display: none;
 }
 
 .wrapper-image {
@@ -62,23 +74,20 @@
   border-radius: 50%;
 }
 
-.wrapper-name {
 
-}
 
-.wrapper-short-description {
-
-}
-
-.wrapper-description {
-
-}
-
-.read-more {
-
-}
+.read-more {}
 
 .read-more:hover {
   transform: scale(1.07);
   background-color: rgba(255, 255, 255, 0.4);
+}
+
+.hidden-info {
+  display: none;
+}
+
+.hidden-info.visible {
+  display: block;
+  opacity: 1;
 }
