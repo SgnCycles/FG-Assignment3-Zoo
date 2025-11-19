@@ -28,9 +28,9 @@ function Bird(
 }
 
 const toggleReadMore = () =>{
-  const isVisible = fullDescription.classList.toggle("description-bird-visible")
-  shortDescription.classList.toggle("short-description-bird-visible")
-  readMore.textContent = isVisible ? "Read less" : "Read more";
+  const isHidden = fullDescription.classList.toggle("hidden")
+  shortDescription.classList.toggle("hidden")
+  readMore.textContent = isHidden ? "Read less" : "Read more";
 }
 
 new Bird(
@@ -97,15 +97,15 @@ birds.forEach((bird) => {
   buttonWrapper.appendChild(button);
 
   button.addEventListener("click", () => {
-    if (
-      bird.name === currentBird &&
-      wrapper.classList.contains("wrapper-bird-visible")
-    ) {
-      wrapper.classList.remove("wrapper-bird-visible");
-      introWrapper.classList.remove("wrapper-intro-bird-visible");
+const isSameBird = bird.name === currentBird
+const isWrapperVisible = !wrapper.classList.contains("hidden")
+    if (isSameBird && isWrapperVisible)
+     {
+      wrapper.classList.add("hidden");
+      introWrapper.classList.remove("hidden");
     } else {
-      introWrapper.classList.add("wrapper-intro-bird-visible");
-      wrapper.classList.add("wrapper-bird-visible");
+      introWrapper.classList.add("hidden");
+      wrapper.classList.remove("hidden");
 
       const img = document.createElement("img");
       img.src = bird.image;
@@ -151,8 +151,8 @@ birds.forEach((bird) => {
         food
       );
 
-      fullDescription.classList.remove("description-bird-visible");
-      shortDescription.classList.remove("short-description-bird-visible");
+      fullDescription.classList.add("hidden");
+      shortDescription.classList.remove("hidden");
       readMore.textContent = "Read more";
       currentBird = bird.name;
     }
