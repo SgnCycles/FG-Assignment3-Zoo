@@ -10,10 +10,12 @@
 }
 
 .wrapper-reptiles {
-  background-color: rgb(30, 81, 124);
-  padding: 24px;
-  margin: 24px;
+  background-color: #555ca3;
+  padding: 16px;
+  border-radius: 32px;
+  margin: 32px
 }
+
 
 .wrapper-reptiles:empty {
   display: none;
@@ -72,7 +74,7 @@
   background-image: url(../images/reptiles.jpg);
   flex-grow: 1;
   border-radius: 12px;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
 }
 
@@ -92,8 +94,9 @@
 }
 
 .wrapper-image {
-  height: 300px;
-  border-radius: 50%;
+  height: auto;
+  width: 40%;
+  border-radius: 16px;
 }
 
 .wrapper-intro {

@@ -45,7 +45,7 @@ const showReptileInfo = reptile => {
 
   let image = document.createElement("img")
   image.src = reptile.image
-  image.classList.add("wrapper-image")      //är samma i html? 
+  image.classList.add("wrapper-image")     
 
   let shortDescription = document.createElement("p")
   shortDescription.textContent = reptile.shortDescription
@@ -91,19 +91,15 @@ const showReptileInfo = reptile => {
     fullInfo.classList.toggle("visible")
     if (fullInfo.classList.contains("visible")) {
       readMoreButton.textContent = "Read Less"
+      shortDescription.style.display = "none";
     } else {
       readMoreButton.textContent = "Read More"
+      shortDescription.style.display = "block";
     }
   })
 
-
-  //hidden-info visible
-
-  // om innehållet innehåller detta så byt namnet till read less
-
-
-  reptileInfo.appendChild(name)
   reptileInfo.appendChild(image)
+  reptileInfo.appendChild(name)
   reptileInfo.appendChild(shortDescription)
   reptileInfo.appendChild(fullInfo)
   reptileInfo.appendChild(readMoreButton)
@@ -114,13 +110,6 @@ const showReptileInfo = reptile => {
   currentAnimal = reptile;
 
 }
-
-
-//fixa sidebar
-//fixa css 
-//fixa html
-
-// Click in sidebar
 
 reptileArray.forEach(reptile => {
 
