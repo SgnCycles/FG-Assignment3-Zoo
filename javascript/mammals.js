@@ -1,6 +1,12 @@
 const mammals = []
 let currentAnimal
 
+const toggleReadMore = () =>{
+  const fullIsHidden = descriptionLocation.classList.toggle("hidden")
+  smallDescriptionLocation.classList.toggle("hidden")
+  readMore.textContent = fullIsHidden ? "Read more" : "Read less";
+}
+
 function Mammal (name, life, group, food, small, description, length, weight, found, image) {
   this.name = name;
   this.life = life;
@@ -28,6 +34,7 @@ const imgLocation = document.querySelector(".image-mammal");
 const nameLocation = document.querySelector(".name-mammal");
 const smallDescriptionLocation = document.querySelector(".small-description-mammal")
 const descriptionLocation = document.querySelector(".description-mammal");
+const readMore = document.querySelector(".read-more");
 
 mammals.forEach(mammal => {
   const animalButtonWrapper = document.createElement("div");
@@ -39,7 +46,6 @@ mammals.forEach(mammal => {
 
   animalButton.addEventListener("click", () => {
     if ( mammal.name === currentAnimal && visibility.classList.contains("wrapper-mammal-visible")) {
-
       visibility.classList.remove("wrapper-mammal-visible")
       introVisibility.classList.remove("wrapper-intro-mammal-visible")
 
@@ -81,25 +87,15 @@ mammals.forEach(mammal => {
       found.textContent = `Found: ${mammal.found}`
 
       descriptionLocation.replaceChildren(description, life, length, weight, found, group, food);
-      currentAnimal = mammal.name
+      
+      descriptionLocation.classList.add("hidden");
+      smallDescriptionLocation.classList.remove("hidden");
+      readMore.textContent = "Read more";
+      currentAnimal = mammal.name;
 
     } 
   })
   animalButtonWrapper.appendChild(animalButton);
 })
 
-const readMore = document.querySelector(".read-more")
-
-
-readMore.addEventListener("click", () => {
-  if (descriptionLocation.classList.contains("description-mammal-visible")) {
-    descriptionLocation.classList.remove("description-mammal-visible")
-    smallDescriptionLocation.classList.remove("small-description-mammal-visible")
-    readMore.textContent = "Read more"
-  } else {
-    descriptionLocation.classList.add("description-mammal-visible")
-    smallDescriptionLocation.classList.add("small-description-mammal-visible")
-    readMore.textContent = "Read less"
-  }
-})
-
+readMore.addEventListener("click", toggleReadMore);

@@ -72,20 +72,7 @@
   margin: 16px auto;
 }
 
-.description-mammal {
-  display: none;
-}
-
-.description-mammal-visible {
-  display: block;
-  transform: scale(1);
-}
-
-.small-description-mammal {
-  display: block;
-}
-
-.small-description-mammal-visible {
+.hidden {
   display: none;
 }
 
