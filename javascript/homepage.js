@@ -62,7 +62,7 @@ mainPageAnimals.forEach(animal => {
     } else { 
       animalCard.classList.remove("active");
       animalCard.style.display = "none";
-      mainContent.style.display = "block";
+      mainContent.style.display = "flex";
     }
   })
 
