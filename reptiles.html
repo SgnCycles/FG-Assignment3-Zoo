@@ -1,16 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reptiles</title>
+    <link rel="stylesheet" href="./styles/typography.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/reptiles.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <script src="./javascript/reptiles.js" defer></script>
+    <script src="./javascript/header.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reptiles</title>
-  <link rel="stylesheet" href="./styles/typography.css" />
-  <link rel="stylesheet" href="./styles/global.css">
-  <link rel="stylesheet" href="./styles/reptiles.css">
-  <script src="./javascript/reptiles.js" defer></script>
-</head>
+  <body>
+    <header class="header">
+      <div class="header-logo">
+        <a href="index.html">
+          <img
+            class="logo"
+            src="./images/jurassic_parse_logo.png"
+            alt="Our logo"
+            width="500px"
+            height="auto"
+          />
+        </a>
+      </div>
+      <nav class="links-center">
+        <ul class="nav-list">
+          <li><a class="nav-option" href="./index.html">Home</a></li>
+          <li><a class="nav-option" href="./birds.html">Birds</a></li>
+          <li><a class="nav-option" href="./mammals.html">Mammals</a></li>
+          <li><a class="nav-option" href="./reptiles.html">Reptiles</a></li>
+          <li><a class="nav-option" href="./about_us.html">About</a></li>
+        </ul>
+        <button class="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
 
+<<<<<<< HEAD
 <body>
   <header class="header">
     <div class="header-logo">
@@ -40,50 +69,95 @@
             <h1 class="reptiles-title">Reptiles</h1>
             <div class="reptiles-image">
               <div class="general-info">Come meet our scales, shells, and slithers up close, and discover why reptiles are some of the most extraordinary creatures on Earth! </div>
+=======
+    <div class="container">
+      <div class="sidebar">
+        <div class="sidebar-animals"></div>
+      </div>
+      <div class="main">
+        <div class="wrapper-intro">
+          <div class="reptiles-main">
+            <div class="reptiles-intro">
+              <h1 class="reptiles-title">Reptiles</h1>
+              <div class="reptiles-image">
+                <div class="general-info">
+                  Come meet our scales, shells, and slithers up close, and
+                  discover why reptiles are some of the most extraordinary
+                  creatures on Earth!
+                </div>
+              </div>
+>>>>>>> feature/mobile-header
             </div>
           </div>
-
+          <div class="wrapper-reptiles"></div>
         </div>
-        <div class="wrapper-reptiles"></div>
       </div>
     </div>
-  </div>
 
-  <footer class="footer">
-    <div class="footer-copyright">&copy; Jurassic Parse</div>
-    <div class="footer-wrapper">
-      <div>
-        <a href="https://facebook.com">
-          <img src="./logos/facebook_logo.png" alt="Facebook logo" width="50px" height="auto">
-        </a>
+    <footer class="footer">
+      <div class="footer-copyright">&copy; Jurassic Parse</div>
+      <div class="footer-wrapper">
+        <div>
+          <a href="https://facebook.com">
+            <img
+              src="./logos/facebook_logo.png"
+              alt="Facebook logo"
+              width="50px"
+              height="auto"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="https://linkedin.com">
+            <img
+              src="./logos/linkedin_logo.png"
+              alt="Linkedin logo"
+              width="50px"
+              height="auto"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="https://github.com">
+            <img
+              src="./logos/github_logo.png"
+              alt="Git logo"
+              width="50px"
+              height="auto"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="https://www.tiktok.com">
+            <img
+              src="./logos/tiktok_logo.png"
+              alt="Tiktok logo"
+              width="50px"
+              height="auto"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="https://www.instagram.com">
+            <img
+              src="./logos/instagram_logo.png"
+              alt="Instagram logo"
+              width="50px"
+              height="auto"
+            />
+          </a>
+        </div>
+        <div>
+          <a href="https://x.com">
+            <img
+              src="./logos/x_logo.png"
+              alt="X logo"
+              width="50px"
+              height="auto"
+            />
+          </a>
+        </div>
       </div>
-      <div>
-        <a href="https://linkedin.com">
-          <img src="./logos/linkedin_logo.png" alt="Linkedin logo" width="50px" height="auto">
-        </a>
-      </div>
-      <div>
-        <a href="https://github.com">
-          <img src="./logos/github_logo.png" alt="Git logo" width="50px" height="auto">
-        </a>
-      </div>
-      <div>
-        <a href="https://www.tiktok.com">
-          <img src="./logos/tiktok_logo.png" alt="Tiktok logo" width="50px" height="auto">
-        </a>
-      </div>
-      <div>
-        <a href="https://www.instagram.com">
-          <img src="./logos/instagram_logo.png" alt="Instagram logo" width="50px" height="auto">
-        </a>
-      </div>
-      <div>
-        <a href="https://x.com">
-          <img src="./logos/x_logo.png" alt="X logo" width="50px" height="auto">
-        </a>
-      </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
