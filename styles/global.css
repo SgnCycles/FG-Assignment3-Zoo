@@ -145,19 +145,6 @@ text-align: center;
   opacity: 0.9;
 }
 
-.hero-grey-blob {
-  background-color: #557ca3;
-  position: absolute;
-  z-index: 400;
-  height: 70%;
-  width: 70%;
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  opacity: 0.1;
-  top: 10vh;
-  left: 20vw;
-  aspect-ratio: 1 / 1;
-}
-
 .main-animal {
   display: none;
   justify-content: center;
@@ -274,6 +261,7 @@ text-align: center;
   .main.active {
     position: static;
     flex-grow: 1;
+    height: 70%;
   }
 
   .sidebar {
@@ -316,9 +304,5 @@ text-align: center;
     background-size: cover;
     position: static;
     z-index: 0;
-  }
-  
-  .hero-grey-blob {
-    display: none;
   }
 }
