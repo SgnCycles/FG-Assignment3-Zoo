@@ -35,8 +35,6 @@ let mainContent = document.querySelector(".main");
  
 let animalCard = document.querySelector(".main-animal");
 
-mainPageAnimals.forEach(animal => console.log(animal.name));
-
 mainPageAnimals.forEach(animal => {
   let sidebarItem = document.createElement("li");
   sidebarItem.classList.add("sidebar-animals-button");
@@ -50,7 +48,7 @@ mainPageAnimals.forEach(animal => {
     document.querySelectorAll(".main-animal.active").forEach(activeCard => activeCard.classList.remove("active"));
 
     animalCard.querySelector(".main-animal-image img").src = animal.image;
-    animalCard.querySelector(".main-animal-image img").alt = animal.alt;
+    animalCard.querySelector(".main-animal-image img").alt = animal.name;
     animalCard.querySelector(".main-animal-name").textContent = animal.name;
     animalCard.querySelector(".main-animal-diet p").textContent = animal.diet;
     animalCard.querySelector(".main-animal-class a").textContent = animal.type;
