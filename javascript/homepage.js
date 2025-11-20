@@ -34,8 +34,6 @@ let mainContent = document.querySelector(".main");
  
 let animalCard = document.querySelector(".main-animal");
 
-mainPageAnimals.forEach(animal => console.log(animal.name));
-
 mainPageAnimals.forEach(animal => {
   let sidebarItem = document.createElement("li");
   sidebarItem.classList.add("sidebar-animals-button");
