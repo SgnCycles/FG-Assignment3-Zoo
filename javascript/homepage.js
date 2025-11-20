@@ -7,7 +7,8 @@ function AnimalMainPage(image, name, diet, type, href, description) {
   this.type = type,
   this.href = href,
   this.description = description,
-  this.alt = `Image of ${name}`,
+  this.alt = name,
+  // this.alt = `Image of ${name}`,
   mainPageAnimals.push(this)
 }
 
@@ -49,6 +50,7 @@ mainPageAnimals.forEach(animal => {
     document.querySelectorAll(".main-animal.active").forEach(activeCard => activeCard.classList.remove("active"));
 
     animalCard.querySelector(".main-animal-image img").src = animal.image;
+    animalCard.querySelector(".main-animal-image img").alt = animal.alt;
     animalCard.querySelector(".main-animal-name").textContent = animal.name;
     animalCard.querySelector(".main-animal-diet p").textContent = animal.diet;
     animalCard.querySelector(".main-animal-class a").textContent = animal.type;
