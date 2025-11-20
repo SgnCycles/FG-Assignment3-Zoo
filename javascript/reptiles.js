@@ -18,7 +18,7 @@ const perentie = new Reptile("Perentie", "20 years", "Reptile", "Carmivore, they
 let reptileArray = [frillNeckedLizard, hawksbillTurtle, perentie]
 let currentAnimal;
 
-let sidebar = document.querySelector(".sidebar")
+let sidebar = document.querySelector(".sidebar-animals")
 let mainContent = document.querySelector(".wrapper-reptiles")
 
 const introVisibility = document.querySelector(".reptiles-intro")

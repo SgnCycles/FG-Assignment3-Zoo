@@ -1,5 +1,6 @@
 .main {
   display: flex;
+  flex: 80%;
 }
 
 .container {
@@ -75,6 +76,9 @@
   border-radius: 12px;
   background-position: bottom;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .general-info {
@@ -82,9 +86,7 @@
   border-radius: 16px;
   color: rgb(213, 210, 210);
   font-family: "Quicksand", sans-serif;
-  margin: 48px;
   padding: 16px;
-  margin-top: 30%;
 }
 
 .hide-intro {
