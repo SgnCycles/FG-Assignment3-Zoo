@@ -1,5 +1,6 @@
 .main {
   display: flex;
+  flex: 80%;
 }
 
 .wrapper-intro-bird {
@@ -33,6 +34,7 @@
 .intro-text {
   background-color: #555ba392;
   padding: 16px;
+  color: #ffff;
   border-radius: 16px;
   margin-top: 30%;
   font-family: "Quicksand", sans-serif;
