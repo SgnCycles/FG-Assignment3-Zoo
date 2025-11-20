@@ -1,5 +1,6 @@
 .main {
   display: flex;
+  flex: 80%;
 }
 
 .wrapper-intro-mammal {
@@ -29,6 +30,9 @@
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .intro-text {
@@ -36,7 +40,6 @@
   padding: 16px;
   border-radius: 16px;
   color: rgb(213, 210, 210);
-  margin-top: 30%;
 }
 
 .image-mammal {
