@@ -10,7 +10,7 @@
 }
 
 .wrapper-reptiles {
-  background-color: #555ca3;
+  background-color: #557ca3;
   padding: 16px;
   border-radius: 32px;
   margin: 32px
@@ -63,7 +63,7 @@
   border-radius: 12px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
-  color: #0c1c23;
+  color: rgb(213, 210, 210);
   text-decoration: none;
   margin: 16px;
 }
@@ -80,7 +80,7 @@
 .general-info {
   background-color: #555ba392;
   border-radius: 16px;
-  color: white;
+  color: rgb(213, 210, 210);
   font-family: "Quicksand", sans-serif;
   margin: 48px;
   padding: 16px;
