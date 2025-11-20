@@ -49,6 +49,7 @@ mainPageAnimals.forEach(animal => {
     document.querySelectorAll(".main-animal.active").forEach(activeCard => activeCard.classList.remove("active"));
 
     animalCard.querySelector(".main-animal-image img").src = animal.image;
+    animalCard.querySelector(".main-animal-image img").alt = animal.name;
     animalCard.querySelector(".main-animal-name").textContent = animal.name;
     animalCard.querySelector(".main-animal-diet p").textContent = animal.diet;
     animalCard.querySelector(".main-animal-class a").textContent = animal.type;
