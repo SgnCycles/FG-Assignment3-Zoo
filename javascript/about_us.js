@@ -22,8 +22,6 @@ let mainEmployeeContent = document.querySelector(".about-us-main");
  
 let employeeCard = document.querySelector(".about-card-container");
 
-zooEmployees.forEach(employee => console.log(employee.name));
-
 zooEmployees.forEach(employee => {
   let sidebarEmployeeItem = document.createElement("li");
   sidebarEmployeeItem.classList.add("sidebar-employee-button");
