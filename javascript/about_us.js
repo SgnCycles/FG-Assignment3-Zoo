@@ -42,7 +42,6 @@ zooEmployees.forEach(employee => {
     employeeCard.querySelector(".about-card-subtitle h3").textContent = employee.jobTitle;
     employeeCard.querySelector(".about-card-description p").textContent = employee.resume;
     
-
     if (!isActive) {
       employeeCard.classList.add("active");
       employeeCard.style.display = "flex";
