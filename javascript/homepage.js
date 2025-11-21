@@ -65,5 +65,4 @@ mainPageAnimals.forEach(animal => {
       mainContent.style.display = "flex";
     }
   })
-
 })
