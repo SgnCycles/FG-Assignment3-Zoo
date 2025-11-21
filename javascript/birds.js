@@ -86,7 +86,6 @@ const introText = document.querySelector(".intro-text")
 introTitle.textContent = "Birds"
 introText.textContent = "Birds are warm-blooded vertebrates with feathers, beaks, and highly efficient respiratory systems."
 
-
 birds.forEach((bird) => {
   const buttonWrapper = document.createElement("div");
   animalsLocation.appendChild(buttonWrapper);
@@ -159,4 +158,3 @@ const isWrapperVisible = !wrapper.classList.contains("hidden")
   });
 });
 readMore.addEventListener("click", toggleReadMore);
-

@@ -40,6 +40,7 @@
   padding: 16px;
   border-radius: 16px;
   color: rgb(213, 210, 210);
+  font-size: 1.2rem;
 }
 
 .image-mammal {
@@ -59,16 +60,13 @@
   background-color: #557ca3;
   padding: 16px;
   border-radius: 32px;
-  transform: scale(0.8);
-  transition: transform 0.3s ease-in-out;
-  transform-origin: center;
   margin: 16px;
+  font-size: 1.2rem;
 }
 
 .wrapper-mammal-visible {
   display: block;
   width: 80%;
-  transform: scale(1);
   margin: 16px auto;
 }
 
@@ -111,4 +109,3 @@
   transform: scale(1.07);
   background-color: rgba(255, 255, 255, 0.4);
 }
-
